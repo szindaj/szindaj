@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Szindaj Sírkő – sírkövek és síremlékek készítése, felújítása, csiszolása, betűvésése és karbantartása Farkasréten, több mint 30 éves tapasztalattal.">
+  <meta name="theme-color" content="#171614">
+  <title>Szindaj Sírkő | Síremlékek és kőfaragás Farkasréten</title>
+  <style>
+    :root{--bg:#f7f5f0;--ink:#24231f;--muted:#6b6860;--gold:#b99a58;--dark:#171614;--line:#e4dfd4;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit}
+    .topbar{background:var(--dark);color:#eee9df;font-size:.9rem;padding:9px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .topbar a{text-decoration:none}
+    header{position:sticky;top:0;z-index:5;background:rgba(247,245,240,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .mark{height:45px;width:45px;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-family:Georgia,serif;font-size:23px;border-radius:50%}
+    .brand strong{display:block;letter-spacing:.12em;font-size:1rem}
+    .brand small{display:block;color:var(--muted);letter-spacing:.07em;font-size:.7rem;margin-top:2px}
+    nav{display:flex;align-items:center;gap:22px}
+    nav a{text-decoration:none;font-size:.91rem}
+    nav a:hover{color:#8a6d32}
+    .nav-cta,.btn{display:inline-block;text-decoration:none;background:var(--gold);color:#171614;padding:12px 18px;font-weight:700;border-radius:2px}
+    .hero{min-height:540px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(15,14,12,.88),rgba(15,14,12,.55) 53%,rgba(15,14,12,.16)),url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=85') center/cover;color:#fff}
+    .hero-inner{width:min(1180px,100%);margin:auto;padding:90px 24px}
+    .eyebrow{color:#e2c98e;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:700}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.18;font-weight:500}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);max-width:760px;margin:20px 0}
+    .hero p{max-width:630px;color:#eeeae2;font-size:1.1rem}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn-outline{display:inline-block;border:1px solid #e8dfcb;color:#fff;padding:11px 18px;text-decoration:none;border-radius:2px}
+    section{padding:78px 24px}
+    .wrap{max-width:1180px;margin:auto}
+    .section-head{max-width:720px;margin-bottom:34px}
+    .section-head h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 14px}
+    .section-head p{color:var(--muted);margin:0}
+    .intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+    .intro-panel{padding:32px;background:#eeebe3;border-left:3px solid var(--gold)}
+    .intro-panel h3{font-size:1.8rem;margin-top:0}
+    .services{background:#fff}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{border:1px solid var(--line);padding:25px;background:#fff}
+    .service .num{font-family:Georgia,serif;color:var(--gold);font-size:1.5rem}
+    .service h3{font-size:1.35rem;margin:10px 0}
+    .service p{color:var(--muted);font-size:.95rem;margin:0}
+    .materials{background:#211f1b;color:#f8f5ef}
+    .materials .section-head p{color:#c8c2b6}
+    .material-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .material{padding:22px;border:1px solid #514b3f}
+    .material h3{color:#e0c483;margin-top:0}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery-item{background:#e7e2d8;min-height:230px;overflow:hidden;position:relative}
+    .gallery-item img{width:100%;height:100%;min-height:230px;object-fit:cover;display:block;transition:transform .4s}
+    .gallery-item:hover img{transform:scale(1.04)}
+    .gallery-note{font-size:.9rem;color:var(--muted);margin-top:15px}
+    .contact{background:#eeebe3}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+    .contact-card{background:#fff;padding:30px;border:1px solid var(--line)}
+    .contact-row{margin:18px 0}
+    .contact-row strong{display:block;color:#8b6c32;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+    .contact-row a{text-decoration:none;font-size:1.1rem}
+    .map-placeholder{min-height:300px;background:linear-gradient(135deg,#d8d2c6,#eee9df);display:grid;place-items:center;text-align:center;padding:28px}
+    footer{background:var(--dark);color:#d9d4c9;padding:30px 24px}
+    .footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.9rem}
+    .mobile-cta{display:none}
+    @media(max-width:800px){
+      .nav{padding:12px 16px;flex-wrap:wrap}
+      nav{width:100%;overflow-x:auto;gap:17px;padding-bottom:4px}
+      nav a{white-space:nowrap;font-size:.86rem}
+      .nav-cta{display:none}
+      .hero{min-height:520px}
+      .hero-inner{padding:70px 22px}
+      section{padding:58px 20px}
+      .intro-grid,.contact-grid{grid-template-columns:1fr;gap:25px}
+      .service-grid,.material-list{grid-template-columns:1fr 1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr}
+      .gallery-item,.gallery-item img{min-height:180px}
+      .mobile-cta{display:flex;position:fixed;z-index:10;bottom:0;left:0;right:0;background:#171614;padding:10px;gap:10px}
+      .mobile-cta a{flex:1;text-align:center;padding:12px 8px;text-decoration:none;font-weight:700;border-radius:2px}
+      .mobile-cta .call{background:var(--gold);color:#171614}
+      .mobile-cta .msg{border:1px solid #b99a58;color:#fff}
+      body{padding-bottom:65px}
+    }
+    @media(max-width:480px){.service-grid,.material-list{grid-template-columns:1fr}.brand strong{font-size:.9rem}.brand small{font-size:.64rem}.gallery-grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><span>Farkasrét · Budapest</span><a href="tel:+36309748056">Telefon: +36 30 974 8056</a></div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#kezdolap" aria-label="Szindaj Sírkő kezdőlap">
+        <span class="mark">S</span><span><strong>SZINDAJ SÍRKŐ</strong><small>KŐFARAGÁS · SÍREMLÉKEK</small></span>
+      </a>
+      <nav aria-label="Fő navigáció">
+        <a href="#kezdolap">Kezdőlap</a><a href="#szolgaltatasok">Szolgáltatások</a><a href="#referenciak">Munkáink</a><a href="#anyagok">Alapanyagok</a><a href="#kapcsolat">Kapcsolat</a>
+      </nav>
+      <a class="nav-cta" href="tel:+36309748056">Hívjon minket</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="kezdolap">
+      <div class="hero-inner">
+        <div class="eyebrow">Több mint 30 év tapasztalat · Farkasrét</div>
+        <h1>Méltó emlék.<br>Időtálló minőség.</h1>
+        <p>Sírkövek és síremlékek készítése, felújítása és gondos karbantartása. Személyes odafigyeléssel, az emlékezés tiszteletét szem előtt tartva.</p>
+        <div class="hero-actions"><a class="btn" href="tel:+36309748056">Telefonáljon nekünk</a><a class="btn-outline" href="#referenciak">Munkáink megtekintése</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap intro-grid">
+        <div class="section-head">
+          <div class="eyebrow" style="color:#947638">Szindaj Sírkő</div>
+          <h2>Gondosság minden részletben</h2>
+          <p>Több mint 30 éves tapasztalattal segítünk síremlékek készítésében és meglévő sírkövek megújításában. Célunk, hogy minden munka tartós, igényes és méltó emléket őrizzen.</p>
+        </div>
+        <div class="intro-panel"><h3>Segítünk megtalálni a megfelelő megoldást</h3><p>Új síremléket tervezne, vagy meglévő sírhelyet szeretne rendbe tenni? Vegye fel velünk a kapcsolatot, és egyeztessünk az igényekről.</p><a class="btn" href="#kapcsolat">Kapcsolatfelvétel</a></div>
+      </div>
+    </section>
+    <section class="services" id="szolgaltatasok">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow" style="color:#947638">Miben segíthetünk?</div><h2>Szolgáltatásaink</h2><p>A következő szolgáltatásokat a vállalkozás tényleges kínálatához igazítsátok közzététel előtt.</p></div>
+        <div class="service-grid">
+          <article class="service"><div class="num">01</div><h3>Sírkövek és síremlékek készítése</h3><p>Egyedi igényekhez és elképzelésekhez igazodó síremlékek.</p></article>
+          <article class="service"><div class="num">02</div><h3>Felújítás és csiszolás</h3><p>Meglévő síremlékek megújítása és felületük gondos kezelése.</p></article>
+          <article class="service"><div class="num">03</div><h3>Betűvésés és feliratok</h3><p>Feliratok készítése és felújítása a síremlékhez illően.</p></article>
+          <article class="service"><div class="num">04</div><h3>Tisztítás és karbantartás</h3><p>A síremlék rendezett megjelenésének megőrzése.</p></article>
+          <article class="service"><div class="num">05</div><h3>Gránit- és márványmunkák</h3><p>Különböző kőanyagokból készülő síremlékek és részletek.</p></article>
+          <article class="service"><div class="num">06</div><h3>Sírkőkellékek pótlása</h3><p>Vázák, fedlapok, virágföldtálak és egyéb kellékek pótlása az elérhető kínálat szerint.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="referenciak">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow" style="color:#947638">Munkáink</div><h2>Valódi munkák, személyes odafigyeléssel</h2><p>Válogatás a Szindaj Sírkő munkáiból. A képek a vállalkozás által megadott referenciafotók.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/munkank-1.jpg" alt="Sírkő referencia – saját fotó behelyezendő"></div>
+          <div class="gallery-item"><img src="images/munkank-2.jpg" alt="Síremlék referencia – saját fotó behelyezendő"></div>
+          <div class="gallery-item"><img src="images/munkank-3.jpg" alt="Gránit síremlék – saját fotó behelyezendő"></div>
+          <div class="gallery-item"><img src="images/munkank-4.jpg" alt="Síremlék felújítás – saját fotó behelyezendő"></div>
+          <div class="gallery-item"><img src="images/munkank-5.jpg" alt="Kőfaragó munka – saját fotó behelyezendő"></div>
+          <div class="gallery-item"><img src="images/munkank-6.jpg" alt="Sírkő részlet – saját fotó behelyezendő"></div>
+        </div>
+        <p class="gallery-note">A galéria fotói a vállalkozás által megadott képekből készültek. Közzététel előtt ellenőrizzétek, hogy a feliratok és síremlékek fotói nyilvánosan bemutathatók-e.</p>
+      </div>
+    </section>
+    <section class="materials" id="anyagok">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Alapanyagok</div><h2>Időtálló kőanyagok</h2><p>Az elérhető anyagok és színek pontos kínálatát egyeztessétek a vállalkozással.</p></div>
+        <div class="material-list">
+          <div class="material"><h3>Gránit</h3><p>Tartós, karakteres megjelenésű kőanyag síremlékekhez.</p></div>
+          <div class="material"><h3>Márvány</h3><p>Klasszikus, elegáns megjelenésű természetes kő.</p></div>
+          <div class="material"><h3>Egyedi megoldások</h3><p>Az elképzelésekhez és a választott síremlékhez igazítva.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="kapcsolat">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow" style="color:#947638">Kapcsolat</div><h2>Beszéljük meg elképzeléseit</h2><p>Kérjen tájékoztatást vagy személyre szabott árajánlatot telefonon.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-row"><strong>Vállalkozás</strong>Szindaj Sírkő</div>
+            <div class="contact-row"><strong>Cím</strong>1121 Budapest, Rácz Aladár út 1.</div>
+            <div class="contact-row"><strong>Telefon</strong><a href="tel:+36309748056">+36 30 974 8056</a></div>
+            <div class="contact-row"><strong>Facebook</strong><a href="https://www.facebook.com/share/19qcMXhNGx/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook-oldal megnyitása</a></div>
+            <a class="btn" href="tel:+36309748056">Hívás indítása</a>
+          </div>
+          <div class="map-placeholder"><div><h3>Farkasrét, Budapest</h3><p>A térkép beágyazása a pontos helyszín ellenőrzése után adható hozzá.</p><a href="https://www.google.com/maps/search/?api=1&query=1121+Budapest%2C+R%C3%A1cz+Alad%C3%A1r+%C3%BAt+1" target="_blank" rel="noopener">Útvonal keresése a Google Térképen ↗</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><span>© <span id="year"></span> Szindaj Sírkő</span><span>Farkasrét · Budapest</span><a href="tel:+36309748056">+36 30 974 8056</a></div></footer>
+  <div class="mobile-cta"><a class="call" href="tel:+36309748056">📞 Hívás</a><a class="msg" href="https://www.facebook.com/share/19qcMXhNGx/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
