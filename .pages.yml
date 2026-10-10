@@ -1,0 +1,24 @@
+
+media:
+  input: images
+  output: images
+
+content:
+  - name: settings
+    label: Weboldal tartalma
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: title
+        label: Weboldal címe
+        type: string
+      - name: phone
+        label: Telefonszám
+        type: string
+      - name: address
+        label: Cím
+        type: string
+      - name: intro
+        label: Bemutatkozás
+        type: text
